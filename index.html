@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,13 +7,123 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Karta - formularz</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet/less" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
-
-
-
+  <header>
+    <img src="" alt="logo">
+    <div class="top-menu">
+      <h1 class="alt-slogan">LITERATURA FAKTU XX i XXI wieku</h1>
+      <input type="text" placeholder="Szukaj produktów...">
+      <a href=""><img src="" alt="facebook logo"></a>
+      <a href="">ZALOGUJ</a>
+      <a href="">KOSZYK</a>
+      <span class="total-items">0</span>
+    </div>
+    <nav>
+      <ul class="nav-items">
+        <li class="nav-itme">NOWOŚCI</li>
+        <li class="nav-itme">KSIĄŻKI</li>
+        <li class="nav-itme">KWARTALNIK "KARTA"</li>
+        <li class="nav-itme">AUTORZY</li>
+        <li class="nav-itme">O NAS</li>
+        <li class="nav-itme">KONTAKT</li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>ZAMÓWIENIE</h1>
+    <div class="form-container">
+      <h2 class="subheading">Dane płatności</h2>
+      <form class="form-primary">
+        <label for="name">Imię<span class="required-symbol">*</span></label>
+        <input type="text" id="name">
+        <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
+        <input type="text" id="lastname">
+        <label for="company-name">Nazwa firmy (opcjonalnie)</label>
+        <input type="text" id="company-name">
+        <label for="country">Kraj<span class="required-symbol">*</span></label>
+        <input type="text" id="country">
+        <label for="street">Ulica<span class="required-symbol">*</span></label>
+        <input type="text" id="street">
+        <label for="company-name">Nazwa firmy (opcjonalnie)</label>
+        <input type="text" id="company-name">
+        <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
+        <input type="text" id="postal-code">
+        <label for="city">Miasto<span class="required-symbol">*</span></label>
+        <input type="text" id="city">
+        <label for="email">Adres email<span class="required-symbol">*</span></label>
+        <input type="text" id="email">
+        <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
+        <input type="text" id="notes">
+      </form>
+    </div>
+    <div class="form-container">
+      <input type="checkbox" id="alt-address">
+      <label for="alt-address">Wysłać na inny adres?</label>
+      <form class="form-optional">
+        <label for="name">Imię<span class="required-symbol">*</span></label>
+        <input type="text" id="name">
+        <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
+        <input type="text" id="lastname">
+        <label for="company-name">Nazwa firmy (opcjonalnie)</label>
+        <input type="text" id="company-name">
+        <label for="country">Kraj<span class="required-symbol">*</span></label>
+        <input type="text" id="country">
+        <label for="street">Ulica<span class="required-symbol">*</span></label>
+        <input type="text" id="street">
+        <label for="company-name">Nazwa firmy (opcjonalnie)</label>
+        <input type="text" id="company-name">
+        <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
+        <input type="text" id="postal-code">
+        <label for="city">Miasto<span class="required-symbol">*</span></label>
+        <input type="text" id="city">
+        <label for="email">Adres email<span class="required-symbol">*</span></label>
+        <input type="text" id="email">
+        <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
+        <input type="text" id="notes">
+      </form>
+    </div>
+    <div class="order">
+      <h2 class="subheading">Zawartość zamówienia</h2>
+      <div class="items">
+        <div class="item">
+          <div class="details">
+            <span class="title">Amerykańska księżna. Z Nowego Jorku do Siedlisk</span>
+            <span class="multiply"> x </span>
+            <span class="amount">1</span>
+          </div>
+          <div class="price">
+            <span class="total-price">30,00</span>
+            <span class="currency"> zł</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="details">
+            <span class="title">Kolejny tytuł</span>
+            <span class="multiply"></span>
+            <span class="amount"></span>
+          </div>
+          <div class="price">
+            <span class="total-price">10,00</span>
+            <span class="currency"> zł</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="details">
+            <span class="title">Następny dosyć długi tytuł na dwie linijki tekstu</span>
+            <span class="multiply"> x </span>
+            <span class="amount">3</span>
+          </div>
+          <div class="price">
+            <span class="total-price">60,00</span>
+            <span class="currency"> zł</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
