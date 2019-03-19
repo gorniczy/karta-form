@@ -11,30 +11,36 @@
 </head>
 
 <body>
-  <header class="container">
-    <img src="img/karta-logo.png" alt="logo" class="col-sm-2">
-    <div class="top-menu col-sm-10">
-      <h1 class="alt-slogan">LITERATURA FAKTU XX i XXI wieku</h1>
-      <form>
-        <input type="text" placeholder="Szukaj produktów...">
-        <input type="submit" name="search" value="Szukaj">
-      </form>
-      <div><img src="img/menu_button.svg" alt="menu button"></div>
-      <a href=""><img src="img/fb.png" alt="facebook logo"></a>
-      <a href="">ZALOGUJ</a>
-      <a href="">KOSZYK</a>
-      <span class="total-items">0</span>
+  <header class="container header">
+    <div class="main-logo">
+      <img src="img/karta-logo.png" alt="logo">
     </div>
-    <nav class="navbar col-sm-10 col-sm-offset-2">
-      <ul class="nav-items">
-        <li class="nav-item">NOWOŚCI</li>
-        <li class="nav-item">KSIĄŻKI</li>
-        <li class="nav-item">KWARTALNIK "KARTA"</li>
-        <li class="nav-item">AUTORZY</li>
-        <li class="nav-item">O NAS</li>
-        <li class="nav-item">KONTAKT</li>
-      </ul>
-    </nav>
+    <div class="menu">
+      <div class="menu-top">
+        <h1 class="alt-slogan hidden-xs">LITERATURA FAKTU XX i XXI wieku</h1>
+        <form>
+          <input type="text" placeholder="Szukaj produktów..." class="search">
+          <input class="visible-xs" type="submit" name="search" value="Szukaj">
+        </form>
+        <div class="menu-buttons">
+          <div class="visible-xs"><img src="img/menu_button.svg" alt="menu button"></div>
+          <a href="" class="btn"><img src="img/fb.png" alt="facebook logo" class="img-responsive"></a>
+          <a href="" class="btn">ZALOGUJ</a>
+          <a href="" class="btn">KOSZYK</a>
+          <span class="total-items">0</span>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li class="nav-item"><a href="">NOWOŚCI</a></li>
+          <li class="nav-item"><a href="">KSIĄŻKI</a></li>
+          <li class="nav-item"><a href="">KWARTALNIK "KARTA"</a></li>
+          <li class="nav-item"><a href="">AUTORZY</a></li>
+          <li class="nav-item"><a href="">O NAS</a></li>
+          <li class="nav-item"><a href="">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <div class="container form-cart">
     <h1>ZAMÓWIENIE</h1>
@@ -72,7 +78,9 @@
       </div>
       <div class="form-container col-sm-6">
         <input type="checkbox" id="alt-address">
-        <label for="alt-address"><h2>Wysłać na inny adres?</h2></label>
+        <label for="alt-address">
+          <h2>Wysłać na inny adres?</h2>
+        </label>
         <form class="form-optional">
           <div class="name-lastname">
             <div class="wrapper">
