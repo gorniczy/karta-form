@@ -12,8 +12,8 @@
 
 <body>
   <header class="container">
-    <img src="img/karta-logo.png" alt="logo">
-    <div class="top-menu">
+    <img src="img/karta-logo.png" alt="logo" class="col-sm-2">
+    <div class="top-menu col-sm-10">
       <h1 class="alt-slogan">LITERATURA FAKTU XX i XXI wieku</h1>
       <form>
         <input type="text" placeholder="Szukaj produktów...">
@@ -25,71 +25,85 @@
       <a href="">KOSZYK</a>
       <span class="total-items">0</span>
     </div>
-    <nav>
+    <nav class="navbar col-sm-10 col-sm-offset-2">
       <ul class="nav-items">
-        <li class="nav-itme">NOWOŚCI</li>
-        <li class="nav-itme">KSIĄŻKI</li>
-        <li class="nav-itme">KWARTALNIK "KARTA"</li>
-        <li class="nav-itme">AUTORZY</li>
-        <li class="nav-itme">O NAS</li>
-        <li class="nav-itme">KONTAKT</li>
+        <li class="nav-item">NOWOŚCI</li>
+        <li class="nav-item">KSIĄŻKI</li>
+        <li class="nav-item">KWARTALNIK "KARTA"</li>
+        <li class="nav-item">AUTORZY</li>
+        <li class="nav-item">O NAS</li>
+        <li class="nav-item">KONTAKT</li>
       </ul>
     </nav>
   </header>
-  <div class="container">
+  <div class="container form-cart">
     <h1>ZAMÓWIENIE</h1>
-    <div class="form-container">
-      <h2 class="subheading">Dane płatności</h2>
-      <form class="form-primary">
-        <label for="name">Imię<span class="required-symbol">*</span></label>
-        <input type="text" id="name">
-        <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
-        <input type="text" id="lastname">
-        <label for="company-name">Nazwa firmy (opcjonalnie)</label>
-        <input type="text" id="company-name">
-        <label for="country">Kraj<span class="required-symbol">*</span></label>
-        <input type="text" id="country">
-        <label for="street">Ulica<span class="required-symbol">*</span></label>
-        <input type="text" id="street">
-        <label for="company-name">Nazwa firmy (opcjonalnie)</label>
-        <input type="text" id="company-name">
-        <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
-        <input type="text" id="postal-code">
-        <label for="city">Miasto<span class="required-symbol">*</span></label>
-        <input type="text" id="city">
-        <label for="email">Adres email<span class="required-symbol">*</span></label>
-        <input type="text" id="email">
-        <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
-        <input type="text" id="notes">
-      </form>
+    <div class="row">
+      <div class="form-container col-sm-6">
+        <h2 class="subheading">Dane płatności</h2>
+        <form class="form-primary">
+          <div class="name-lastname">
+            <div class="wrapper">
+              <label for="name">Imię<span class="required-symbol">*</span></label>
+              <input type="text" id="name">
+            </div>
+            <div class="wrapper">
+              <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
+              <input type="text" id="lastname">
+            </div>
+          </div>
+          <label for="company-name">Nazwa firmy (opcjonalnie)</label>
+          <input type="text" id="company-name">
+          <label for="country">Kraj<span class="required-symbol">*</span></label>
+          <input type="text" id="country">
+          <label for="street">Ulica<span class="required-symbol">*</span></label>
+          <input type="text" id="street">
+          <label for="company-name">Nazwa firmy (opcjonalnie)</label>
+          <input type="text" id="company-name">
+          <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
+          <input type="text" id="postal-code">
+          <label for="city">Miasto<span class="required-symbol">*</span></label>
+          <input type="text" id="city">
+          <label for="email">Adres email<span class="required-symbol">*</span></label>
+          <input type="text" id="email">
+          <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
+          <input type="text" id="notes">
+        </form>
+      </div>
+      <div class="form-container col-sm-6">
+        <input type="checkbox" id="alt-address">
+        <label for="alt-address"><h2>Wysłać na inny adres?</h2></label>
+        <form class="form-optional">
+          <div class="name-lastname">
+            <div class="wrapper">
+              <label for="name">Imię<span class="required-symbol">*</span></label>
+              <input type="text" id="name">
+            </div>
+            <div class="wrapper">
+              <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
+              <input type="text" id="lastname">
+            </div>
+          </div>
+          <label for="company-name">Nazwa firmy (opcjonalnie)</label>
+          <input type="text" id="company-name">
+          <label for="country">Kraj<span class="required-symbol">*</span></label>
+          <input type="text" id="country">
+          <label for="street">Ulica<span class="required-symbol">*</span></label>
+          <input type="text" id="street">
+          <label for="company-name">Nazwa firmy (opcjonalnie)</label>
+          <input type="text" id="company-name">
+          <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
+          <input type="text" id="postal-code">
+          <label for="city">Miasto<span class="required-symbol">*</span></label>
+          <input type="text" id="city">
+          <label for="email">Adres email<span class="required-symbol">*</span></label>
+          <input type="text" id="email">
+          <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
+          <input type="text" id="notes">
+        </form>
+      </div>
     </div>
-    <div class="form-container">
-      <input type="checkbox" id="alt-address">
-      <label for="alt-address">Wysłać na inny adres?</label>
-      <form class="form-optional">
-        <label for="name">Imię<span class="required-symbol">*</span></label>
-        <input type="text" id="name">
-        <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
-        <input type="text" id="lastname">
-        <label for="company-name">Nazwa firmy (opcjonalnie)</label>
-        <input type="text" id="company-name">
-        <label for="country">Kraj<span class="required-symbol">*</span></label>
-        <input type="text" id="country">
-        <label for="street">Ulica<span class="required-symbol">*</span></label>
-        <input type="text" id="street">
-        <label for="company-name">Nazwa firmy (opcjonalnie)</label>
-        <input type="text" id="company-name">
-        <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
-        <input type="text" id="postal-code">
-        <label for="city">Miasto<span class="required-symbol">*</span></label>
-        <input type="text" id="city">
-        <label for="email">Adres email<span class="required-symbol">*</span></label>
-        <input type="text" id="email">
-        <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
-        <input type="text" id="notes">
-      </form>
-    </div>
-    <div class="order">
+    <div class="order col-sm-7">
       <h2 class="subheading">Zawartość zamówienia</h2>
       <div class="items">
         <div class="item">
