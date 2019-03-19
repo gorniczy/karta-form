@@ -1,0 +1,50 @@
+* {
+  outline: 1px solid red;
+}
+header {
+  min-width: 100%;
+}
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+}
+.nav-items {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.name-lastname {
+  display: flex;
+  justify-content: space-between;
+}
+.name-lastname .wrapper {
+  width: 45%;
+}
+label {
+  margin: 0;
+}
+input[type=text] {
+  width: 100%;
+  margin: 5px 0;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+.item .details {
+  width: 70%;
+}
+.item .price {
+  width: 20%;
+  text-align: center;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 22px;
+}
