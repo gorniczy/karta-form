@@ -35,6 +35,7 @@ h2 {
 .menu-top .main-logo img {
   display: block;
   width: 90%;
+  max-width: 200px;
   margin: 10px auto;
 }
 .menu-top form {
@@ -42,17 +43,17 @@ h2 {
   min-width: 150px;
 }
 .menu-top form .search {
-  width: 100%;
+  width: 90%;
   height: auto;
   max-height: 50px;
-  margin: 10px 0;
+  margin: 10px 5%;
   font-size: 18px;
   color: #475361;
   border: 1px solid white;
 }
 .menu-top form .btn {
-  width: 100%;
-  margin: 10px 0;
+  width: 90%;
+  margin: 10px 5%;
 }
 .menu-top .btn {
   display: flex;
@@ -72,11 +73,22 @@ h2 {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 10px 0;
+  margin: 10px 0 20px;
+}
+.menu-top .menu-buttons .wrapper {
+  display: flex;
+}
+.menu-top .menu-buttons .wrapper-1 {
+  width: 40%;
+  justify-content: center;
+}
+.menu-top .menu-buttons .wrapper-2 {
+  width: 60%;
+  justify-content: flex-start;
 }
 .menu-top .menu-buttons .btn {
   min-width: 50px;
-  margin-right: 5%;
+  margin-left: 5%;
 }
 .menu-top .menu-buttons .btn:hover {
   color: white;
@@ -91,14 +103,13 @@ h2 {
   background-color: white;
   font-size: 18px;
   color: #DE4C2C;
-  margin-left: -5%;
+  margin-right: auto;
   min-width: 50px;
   max-height: 50px;
 }
 .navbar {
-  display: flex;
   background-color: #DE4C2C;
-  margin: 10px 0 0;
+  margin: 0;
   border-radius: 0;
 }
 .nav-items {
@@ -112,7 +123,7 @@ h2 {
 .nav-items .nav-item {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   margin: 0;
 }
 .nav-items .nav-item a {
@@ -274,7 +285,7 @@ input[type=text] {
     display: flex;
     justify-content: space-between;
   }
-  .name-lastname .wrapper {
+  .name-lastname div {
     width: 45%;
   }
   label {
