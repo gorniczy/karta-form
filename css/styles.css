@@ -107,10 +107,13 @@ h2 {
   min-width: 50px;
   max-height: 50px;
 }
-.navbar {
+#nav-mobile {
   background-color: #DE4C2C;
   margin: 0;
   border-radius: 0;
+}
+#nav-desktop {
+  display: none;
 }
 .nav-items {
   display: flex;
@@ -266,7 +269,10 @@ input[type=text] {
     min-width: 50px;
     max-height: 50px;
   }
-  .navbar {
+  #nav-mobile {
+    display: none;
+  }
+  #nav-desktop {
     display: flex;
     justify-content: flex-start;
     background-color: #DE4C2C;
