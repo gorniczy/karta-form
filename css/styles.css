@@ -13,11 +13,14 @@ h2 {
   font-size: 22px;
 }
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   min-width: 100%;
   color: white;
   background-color: #475361;
   padding: 0;
+  z-index: 1000;
 }
 .menu {
   flex-grow: 1;
@@ -310,6 +313,7 @@ input[type=text] {
   }
   label {
     margin: 0;
+    font-size: 18px;
   }
   #alt-check {
     display: none;
@@ -357,4 +361,10 @@ input[type=text] {
     display: inline-block;
     font-size: 22px;
   }
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: auto;
 }
