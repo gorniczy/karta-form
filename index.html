@@ -77,11 +77,11 @@
         </form>
       </div>
       <div class="form-container col-sm-6">
-        <input type="checkbox" id="alt-address">
+        <input type="checkbox" id="alt-address" data-toggle="collapse" data-target="#toggle-form">
         <label for="alt-address">
           <h2>Wysłać na inny adres?</h2>
         </label>
-        <form class="form-optional">
+        <form id="toggle-form" class="form-optional collapse">
           <div class="name-lastname">
             <div class="wrapper">
               <label for="name">Imię<span class="required-symbol">*</span></label>
@@ -150,6 +150,9 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/js/collapse.js"></script>
 </body>
 
 </html>
