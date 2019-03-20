@@ -219,90 +219,110 @@ input[type=text] {
   }
 }
 @media screen and (min-width: 768px) {
-  body {
-    color: #475361;
-  }
-
-  .header {
-    display: flex;
-    min-width: 100%;
-    color: white;
-    background-color: #475361;
-    padding: 0;
-  }
-
   .main-logo-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    min-width: 200px;
+    width: 200px;
+    min-width: 150px;
     height: auto;
+    margin: 20px 0 10px;
 
     img {
-      width: 80%;
-      padding: 15px;
+      width: 90%;
     }
   }
 
   .menu {
-    flex-grow: 1;
-    padding: 0;
     margin-top: 20px;
   }
 
   .menu-top {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap; //this
+    justify-content: flex-start;
 
     form {
-      width: 300px;
+      width: 20%;
       min-width: 150px;
+      margin-left: auto;
 
       .search {
-        width: 100%;
+        width: 90%;
         height: 100%;
         max-height: 50px;
-        margin: 0;
+        margin: 0 5%;
         font-size: 18px;
         color: #475361;
+        border: 1px solid white;
+      }
+    }
+
+    .btn {
+      // this
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 0;
+      font-size: 18px;
+      color: white;
+      max-height: 50px;
+      padding: 6px;
+
+      &:hover {
+        color: white;
       }
     }
 
     .menu-buttons {
       display: flex;
-      margin-right: 3%;
+      justify-content: flex-start; //this
+      width: 30%;
+      min-width: 330px;
+      margin: 0;
+
+      .wrapper {
+        display: flex;
+      }
+
+      .wrapper-1 {
+        width: auto;
+        justify-content: flex-start;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .wrapper-2 {
+        width: auto;
+        justify-content: flex-start;
+      }
 
       .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid white;
-        border-radius: 0;
-        font-size: 18px;
-        color: white;
-        max-height: 50px;
+        // this
         min-width: 50px;
-        margin-left: 10px;
-        padding: 6px;
+        margin-left: 10px; // this
 
         &:hover {
           color: white;
         }
 
         img {
-          height: 100%;
+          width: 100%; //this
         }
       }
 
       span {
+        //this
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 0;
         background-color: white;
         font-size: 18px;
         color: #DE4C2C;
+        margin-right: auto;
         min-width: 50px;
         max-height: 50px;
       }
@@ -320,6 +340,7 @@ input[type=text] {
 
   .nav-items {
     display: flex;
+    flex-direction: row;
     list-style: none;
     width: 100%;
     padding: 0;
