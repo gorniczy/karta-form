@@ -11,6 +11,8 @@ h1 {
 h2 {
   display: inline-block;
   font-size: 22px;
+  border-bottom: 1px solid #475361;
+  padding-bottom: 5px;
 }
 .header {
   position: sticky;
@@ -136,6 +138,10 @@ h2 {
   text-decoration: none;
   color: white;
 }
+.order-section {
+  border-bottom: 1px solid #DE4C2C;
+  padding-bottom: 5px;
+}
 label {
   margin: 0;
 }
@@ -156,7 +162,8 @@ label {
 #alt-check:checked + label .check {
   border: 6px solid #475361;
 }
-input[type=text] {
+input[type=text],
+input[type=email] {
   width: 100%;
   margin: 5px 0;
   border: 1px solid #DE4D2E;
@@ -171,6 +178,9 @@ input[type=text] {
 .item {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #475361;
+  font-size: 18px;
+  font-weight: bold;
 }
 .item .details {
   width: 70%;
@@ -314,6 +324,7 @@ input[type=text] {
   label {
     margin: 0;
     font-size: 18px;
+    font-weight: 400;
   }
   #alt-check {
     display: none;
@@ -349,17 +360,6 @@ input[type=text] {
   .item .price {
     width: 20%;
     text-align: center;
-  }
-  h1,
-  h2 {
-    margin: 10px 0;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    display: inline-block;
-    font-size: 22px;
   }
 }
 .hidden {

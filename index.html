@@ -66,37 +66,37 @@
     </div>
   </header>
   <div class="container form-cart">
-    <h1>ZAMÓWIENIE</h1>
+    <h1 class="order-section">ZAMÓWIENIE</h1>
     <div class="row">
       <div class="form-container col-sm-6">
         <h2 class="subheading">Dane płatności</h2>
-        <form class="form-primary">
+        <form class="form-primary" method="POST">
           <div class="name-lastname">
             <div class="wrapper-3">
               <label for="name">Imię<span class="required-symbol">*</span></label>
-              <input type="text" id="name" />
+              <input type="text" id="name" name="name" required />
             </div>
             <div class="wrapper-4">
               <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
-              <input type="text" id="lastname" />
+              <input type="text" id="lastname" name="lastname" required/>
             </div>
           </div>
           <label for="company-name">Nazwa firmy (opcjonalnie)</label>
-          <input type="text" id="company-name" />
+          <input type="text" id="company-name" name="company-name" />
           <label for="country">Kraj<span class="required-symbol">*</span></label>
-          <input type="text" id="country" />
+          <input type="text" id="country" name="country" required/>
           <label for="street">Ulica<span class="required-symbol">*</span></label>
-          <input type="text" id="street" />
+          <input type="text" id="street" name="street" required/>
           <label for="company-name">Nazwa firmy (opcjonalnie)</label>
-          <input type="text" id="company-name" />
+          <input type="text" id="company-name" name="company" />
           <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
-          <input type="text" id="postal-code" />
+          <input type="text" id="postal-code" name="postal-code" required />
           <label for="city">Miasto<span class="required-symbol">*</span></label>
-          <input type="text" id="city" />
+          <input type="text" id="city" name="city" required/>
           <label for="email">Adres email<span class="required-symbol">*</span></label>
-          <input type="text" id="email" />
+          <input type="email" id="email" name="email" required />
           <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
-          <input type="text" id="notes" />
+          <input type="text" id="notes" name="notes" />
         </form>
       </div>
       <div class="form-container col-sm-6">
@@ -105,33 +105,33 @@
           <div class="check"></div>
           <h2>Wysłać na inny adres?</h2>
         </label>
-        <form id="toggle-form" class="form-optional collapse">
+        <form id="toggle-form" class="form-optional collapse" method="POST">
           <div class="name-lastname">
             <div class="wrapper-3">
               <label for="name">Imię<span class="required-symbol">*</span></label>
-              <input type="text" id="name" />
+              <input type="text" id="name" name="name" required />
             </div>
             <div class="wrapper-4">
               <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
-              <input type="text" id="lastname" />
+              <input type="text" id="lastname" name="lastname" required/>
             </div>
           </div>
           <label for="company-name">Nazwa firmy (opcjonalnie)</label>
-          <input type="text" id="company-name" />
+          <input type="text" id="company-name" name="company-name" />
           <label for="country">Kraj<span class="required-symbol">*</span></label>
-          <input type="text" id="country" />
+          <input type="text" id="country" name="country" required/>
           <label for="street">Ulica<span class="required-symbol">*</span></label>
-          <input type="text" id="street" />
+          <input type="text" id="street" name="street" required/>
           <label for="company-name">Nazwa firmy (opcjonalnie)</label>
-          <input type="text" id="company-name" />
+          <input type="text" id="company-name" name="company" />
           <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
-          <input type="text" id="postal-code" />
+          <input type="text" id="postal-code" name="postal-code" required />
           <label for="city">Miasto<span class="required-symbol">*</span></label>
-          <input type="text" id="city" />
+          <input type="text" id="city" name="city" required/>
           <label for="email">Adres email<span class="required-symbol">*</span></label>
-          <input type="text" id="email" />
+          <input type="email" id="email" name="email" required />
           <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
-          <input type="text" id="notes" />
+          <input type="text" id="notes" name="notes" />
         </form>
       </div>
     </div>
@@ -175,6 +175,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="node_modules/bootstrap/js/collapse.js"></script>
   <script>
+
     const isDesktop = () => {
       return window.matchMedia("(min-width: 768px)").matches;
     }
@@ -192,7 +193,7 @@
       }
     }
 
-    const hideForMobile = (action) => {
+    const actionForMobile = (action) => {
 
       const menuTop = document.querySelector('.menu-top');
       const menuButtons = document.querySelector('.menu-buttons');
@@ -223,20 +224,18 @@
 
     }
 
-    function myFunction() {
+    function scrollAction() {
       if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        isDesktop() ? actionForDesktop('hide') : hideForMobile('hide');
+        isDesktop() ? actionForDesktop('hide') : actionForMobile('hide');
       } else {
-        isDesktop() ? actionForDesktop('show') : hideForMobile('show');
+        isDesktop() ? actionForDesktop('show') : actionForMobile('show');
       }
     }
 
     window.onscroll = function() {
-      myFunction()
+      scrollAction();
     };
-    window.addEventListener('resize', function() {
 
-    });
   </script>
 </body>
 
