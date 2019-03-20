@@ -1,12 +1,12 @@
 {
   "name": "karta-form",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "order page for a book store",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "gorniczy",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.4.1",
