@@ -12,18 +12,21 @@
 
 <body>
   <header class="container header">
-    <div class="main-logo">
+    <div class="main-logo-desktop hidden-xs">
       <img src="img/karta-logo.png" alt="logo">
     </div>
     <div class="menu">
       <div class="menu-top">
         <h1 class="alt-slogan hidden-xs">LITERATURA FAKTU XX i XXI wieku</h1>
+        <div class="main-logo visible-xs">
+          <img src="img/karta-logo.png" alt="logo">
+        </div>
         <form>
           <input type="text" placeholder="Szukaj produktów..." class="search">
-          <input class="visible-xs" type="submit" name="search" value="Szukaj">
+          <a class="btn visible-xs" type="submit" name="search">SZUKAJ</a>
         </form>
         <div class="menu-buttons">
-          <div class="visible-xs"><img src="img/menu_button.svg" alt="menu button"></div>
+          <a class="visible-xs btn"><img src="img/menu_button.svg" alt="menu button"></a>
           <a href="" class="btn"><img src="img/fb.png" alt="facebook logo" class="img-responsive"></a>
           <a href="" class="btn">ZALOGUJ</a>
           <a href="" class="btn">KOSZYK</a>
@@ -77,8 +80,9 @@
         </form>
       </div>
       <div class="form-container col-sm-6">
-        <input type="checkbox" id="alt-address" data-toggle="collapse" data-target="#toggle-form">
-        <label for="alt-address">
+        <input type="checkbox" id="alt-check" data-toggle="collapse" data-target="#toggle-form">
+        <label for="alt-check">
+          <div class="check"></div>
           <h2>Wysłać na inny adres?</h2>
         </label>
         <form id="toggle-form" class="form-optional collapse">
