@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Karta - formularz</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="dist/styles.css" />
 </head>
 
@@ -78,21 +78,21 @@
             </div>
             <div class="wrapper-4">
               <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
-              <input type="text" id="lastname" name="lastname" required/>
+              <input type="text" id="lastname" name="lastname" required />
             </div>
           </div>
           <label for="company-name">Nazwa firmy (opcjonalnie)</label>
           <input type="text" id="company-name" name="company-name" />
           <label for="country">Kraj<span class="required-symbol">*</span></label>
-          <input type="text" id="country" name="country" required/>
+          <input type="text" id="country" name="country" required />
           <label for="street">Ulica<span class="required-symbol">*</span></label>
-          <input type="text" id="street" name="street" required/>
+          <input type="text" id="street" name="street" required />
           <label for="company-name">Nazwa firmy (opcjonalnie)</label>
           <input type="text" id="company-name" name="company" />
           <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
           <input type="text" id="postal-code" name="postal-code" required />
           <label for="city">Miasto<span class="required-symbol">*</span></label>
-          <input type="text" id="city" name="city" required/>
+          <input type="text" id="city" name="city" required />
           <label for="email">Adres email<span class="required-symbol">*</span></label>
           <input type="email" id="email" name="email" required />
           <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
@@ -113,21 +113,21 @@
             </div>
             <div class="wrapper-4">
               <label for="lastname">Nazwisko<span class="required-symbol">*</span></label>
-              <input type="text" id="lastname" name="lastname" required/>
+              <input type="text" id="lastname" name="lastname" required />
             </div>
           </div>
           <label for="company-name">Nazwa firmy (opcjonalnie)</label>
           <input type="text" id="company-name" name="company-name" />
           <label for="country">Kraj<span class="required-symbol">*</span></label>
-          <input type="text" id="country" name="country" required/>
+          <input type="text" id="country" name="country" required />
           <label for="street">Ulica<span class="required-symbol">*</span></label>
-          <input type="text" id="street" name="street" required/>
+          <input type="text" id="street" name="street" required />
           <label for="company-name">Nazwa firmy (opcjonalnie)</label>
           <input type="text" id="company-name" name="company" />
           <label for="postal-code">Kod pocztowy<span class="required-symbol">*</span></label>
           <input type="text" id="postal-code" name="postal-code" required />
           <label for="city">Miasto<span class="required-symbol">*</span></label>
-          <input type="text" id="city" name="city" required/>
+          <input type="text" id="city" name="city" required />
           <label for="email">Adres email<span class="required-symbol">*</span></label>
           <input type="email" id="email" name="email" required />
           <label for="notes">Uwagi do zamówienia (opcjonalnie)</label>
@@ -173,9 +173,10 @@
   </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="node_modules/bootstrap/js/collapse.js"></script>
-  <script>
 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  <script>
     const isDesktop = () => {
       return window.matchMedia("(min-width: 768px)").matches;
     }
@@ -235,7 +236,6 @@
     window.onscroll = function() {
       scrollAction();
     };
-
   </script>
 </body>
 
